@@ -1,0 +1,27 @@
+2022-04-04 10:17:17 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into app_vw_familiares(id_pais, id_empleado, id_familiar, apellido, nombres, edad, id_tipo_dep, id_tipo_dep_esp) values
+('0010', '11863', 'F118631', 'Piccone', 'Mateo Valentin', '13', '1', 'hijo'),
+('0010', '11863', 'F118632', 'Rojas', 'Maria Laura', '40', '2', 'conjugue'),
+('0010', '11864', 'F118641', 'Cannillo', 'Dante', '5, '1', 'hijo[*]');"
+Syntax error in SQL statement "insert into app_vw_familiares(id_pais, id_empleado, id_familiar, apellido, nombres, edad, id_tipo_dep, id_tipo_dep_esp) values
+('0010', '11863', 'F118631', 'Piccone', 'Mateo Valentin', '13', '1', 'hijo'),
+('0010', '11863', 'F118632', 'Rojas', 'Maria Laura', '40', '2', 'conjugue'),
+('0010', '11864', 'F118641', 'Cannillo', 'Dante', '5, '1', 'hijo[*]');"; SQL statement:
+insert into app_vw_familiares(id_pais, id_empleado, id_familiar, apellido, nombres, edad, id_tipo_dep, id_tipo_dep_esp) values
+('0010', '11863', 'F118631', 'Piccone', 'Mateo Valentin', '13', '1', 'hijo'),
+('0010', '11863', 'F118632', 'Rojas', 'Maria Laura', '40', '2', 'conjugue'),
+('0010', '11864', 'F118641', 'Cannillo', 'Dante', '5, '1', 'hijo'); [42000-200]
+2022-04-04 11:14:59 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "APP_VW_PERSONAS" no encontrada
+Table "APP_VW_PERSONAS" not found; SQL statement:
+select * from app_Vw_personas [42102-200]
+2022-04-04 11:18:48 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT * FROM APP_VW_PERSONA
+
+UPDATE APP_VW_PERSONA[*] SET NUMERO_DOCUMENTO = 30082525, PAIS_NACIMIENTO_ESP = 'Argentina'"
+Syntax error in SQL statement "SELECT * FROM APP_VW_PERSONA
+
+UPDATE APP_VW_PERSONA[*] SET NUMERO_DOCUMENTO = 30082525, PAIS_NACIMIENTO_ESP = 'Argentina'"; SQL statement:
+select * from app_Vw_persona
+
+update app_vw_persona set numero_documento = 30082525, pais_nacimiento_esp = 'Argentina' [42000-200]
